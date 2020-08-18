@@ -2,7 +2,7 @@ body {
     padding: 100px;
     background-color: aliceblue;
 }
-#submit-area{
+.submit-area{
     margin-top: 50px;
     padding: 40px;
     border-radius: 10px;
