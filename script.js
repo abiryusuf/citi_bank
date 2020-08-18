@@ -1,4 +1,5 @@
 const loginBtn = document.getElementById("login");
 loginBtn.addEventListener("click", function(){
-    console.log("click Marche")
+    const loginArea = document.getElementById("login-area");
+    loginArea.style.display = "none";
 })
