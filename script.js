@@ -62,7 +62,7 @@ function getInputNumber(id){
     return withdrawNumber;
 }
 function updateSpanText(id, depositNumber){
-    const current = document.getElementById(id).innerText;
+    const current = document.getElementById(id).innerText
     //console.log("balance", balance)
     const currentBalanceNumber = parseFloat(current);
     //depositNumber comes from out of function
