@@ -16,14 +16,33 @@ depositBtn.addEventListener("click", function(){
     const depositNumber = parseFloat(depositAmount);
     //console.log(depositNumber);
 
-    const currentDeposit = document.getElementById("currentDeposit").innerText;
-     //convert string to float
-    const currentNumber = parseFloat(currentDeposit);
-    const total = depositNumber + currentNumber;
-    document.getElementById("currentDeposit").innerText = total;
+    // const currentDeposit = document.getElementById("currentDeposit").innerText;
+    // convert string to float
+    // const currentNumber = parseFloat(currentDeposit);
+    // const total = depositNumber + currentNumber;
+    // document.getElementById("currentDeposit").innerText = total;
+
+    // const balance = document.getElementById("currentBalance").innerText;
+    // console.log("balance", balance)
+    // const currentBalanceNumber = parseFloat(balance);
+    // const totalBalance = depositNumber + currentBalanceNumber;
+    // document.getElementById("currentBalance").innerText = totalBalance;
     document.getElementById("depositAmount").value = "";
     //console.log(total);
+
+    // calling function
+    updateSpanText("currentBalance", depositNumber);
+    updateSpanText("currentDeposit", depositNumber)
 })
+function updateSpanText(id, depositNumber){
+    const current = document.getElementById(id).innerText;
+    //console.log("balance", balance)
+    const currentBalanceNumber = parseFloat(current);
+    //depositNumber comes from out of function
+    const total = depositNumber + currentBalanceNumber;
+    document.getElementById(id).innerText = total;
+
+}
 
 // const transaction = document.getElementById("transaction-area");
 // var newItem = document.createElement("p");
